@@ -1,0 +1,19 @@
+
+var characters = [
+    { 'name': 'barney',
+        'age': 36 },
+    { 'name': 'fred',
+        'age': 40 }
+];
+var arr = [];
+function pluck(characters2, name) {
+
+    for (var i=0; i < characters2.length; i++){
+
+
+        arr.push(characters2[i][name]);
+
+    }
+    return arr;
+}
+document.write(pluck(characters, 'name'));

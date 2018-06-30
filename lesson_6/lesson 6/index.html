@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/filter-plugin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<<nav class="nav">
+    <a class="nav__link" href="#s_1" id="a">Section 1</a>
+    <a class="nav__link" href="#s_2" id="b">Section 2</a>
+    <a class="nav__link" href="#s_3" id="c">Section 3</a>
+    <a class="nav__link" href="#s_4" id="d">Section 4</a>
+</nav>
+
+<section class="section" id="s_1"></section>
+<section class="section" id="s_2"></section>
+<section class="section" id="s_3"></section>
+<section class="section" id="s_4"></section>
+
+<!--<section class="intro">
+     <div class="filter-block"></div>
+    <div class="intro__block"></div>
+</section>-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/scrollPlugin.js"></script>
+<script src="js/filterPlugin.js"></script>
+<script>
+    $('.nav__link').scrollPlugin({
+        speed:600
+    });
+
+    $(".intro__block").filterPlugin({
+        filter: 'grayscale(1)'
+    });
+
+</script>
+
+
+
+<div id="log"></div>
+
+</body>
+</html>
